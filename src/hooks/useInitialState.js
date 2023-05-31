@@ -9,13 +9,14 @@ const useInitialState = (props) => {
 // const [cart, setState] = useState(initialState);
     const [cart, setCart] = useState();
     const [active, setActive] = useState(null);
+    const [user, setUser] = useState(17);
         // const initialState = {
         //     active,
         //     setActive
 
         //     }
-           const toggleActive = (props) => {
-                setActive(active === 'active' ?null : 'active' )
+           const toggleActive = () => {
+                setActive(active === 'active' ? null : 'active' )
                 console.log(props)
               }
 
@@ -103,7 +104,9 @@ return {
 
     active,
     setActive, 
-    toggleActive
+    toggleActive,
+    user,
+    setUser,
 }
     
 }

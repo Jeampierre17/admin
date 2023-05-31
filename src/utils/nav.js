@@ -13,9 +13,9 @@ export default function Nav() {
     return(
     <div className="d-flex align-items-center justify-content-between">
     <i  onClick={()=> toggle('active')}  className="bi bi-list toggle-sidebar-btn"></i>
-    <Link to="/"   onClick={() => console.log(active)}  class="logo d-flex align-items-center">
-     <img src="assets/img/logo.png" alt=""/>
-     <span class="d-none d-lg-block">NiceAdmin</span>
+    <Link to="/"  class="logo d-flex align-items-center">
+    
+     <span class="d-none d-lg-block">RestoAdmin</span> <img src="img/logo.png" />
    </Link>
   
  </div>)
